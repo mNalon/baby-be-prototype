@@ -1,0 +1,133 @@
+<html>
+  <body>
+    <head>
+      <style>
+        h2{
+          border: black;
+          border-width: thick;
+          background: #f7f6f6;
+          padding: 10px;
+          margin-bottom: 10px;
+          text-align: center
+        }
+
+        .separator{
+          margin-top: 25px
+        }
+
+        .resume{
+          background-color: #e6e6e6;
+        }
+      
+        
+        
+      </style>
+    </head>
+    <h2>
+      Cadastro - Vendas
+    </h2>
+
+    <form>
+      <button>Adicionar produto</button>
+
+      <div class="separator">
+        <fieldset>
+          <legend>Produto:</legend>
+          <select type="text" id="product">
+            <option value="">Camiseta branca lisa - Marca X</option>
+            <option value="">Camiseta branca - Marca Y</option>
+            <option value="">Camiseta azul lista - Marca X</option>
+            <option value="">...</option>
+          </select>
+
+          <div class="separator">
+            <label for="product">Valor de venda</label>
+            <input type="text" placeHolder="R$56,00"/>
+          </div>
+        </fieldset>
+      </div>
+
+      
+
+      <div class="separator">
+        <fieldset>
+          <legend>Insumos:</legend>
+          
+
+          <button>+</button> Sacola (1)<br>
+          <button>+</button> Papel de presente (3)<br>
+          <button>+</button> Laço (0)<br>
+          <button>+</button> Caixa (0)<br>
+          <button>+</button> Papel de ceda (0)<br>
+          <button>+</button> Impressão (1)<br>
+
+        
+        </fieldset>
+        
+      </div>
+
+      <div class="separator">
+        <fieldset>
+          <legend>Frete:</legend>   
+
+          <div class="separator">
+            <label>Tipo:</label>
+            <select type="text" id="product">
+              <option value="">Retirada no local</option>
+              <option value="">Entrega física</option>
+              <option value="">Envio</option>
+              <option value="">...</option>
+            </select>
+            <label for="product">Valor:</label>
+            <input type="text" id="product" />
+          </div>
+        </fieldset>
+      </div>
+
+
+      <div class="separator">
+        <fieldset>
+          <legend>Formas de pagamento:</legend>  
+
+          <div class="separator">
+            <label for="product">Subtotal (Produtos + Insumos + Frete):</label>
+            <input type="text" placeHolder="R$167,00"/>
+          </div>
+
+          <div class="separator">
+            <label for="product">Dinheiro:</label>
+            <input type="text" value=100 /> |
+
+            <label for="product">Débito:</label>
+            <input type="text"/> | 
+
+            <label for="product">Crédito:</label>
+            <input type="text" value=67 />
+            <select name="" id="">
+              <option value="">1X</option>
+              <option value="">2X</option>
+              <option value="" selected>3X</option>
+              <option value="">...</option>
+            </select>
+              = 3x de R$23,00
+          </div>
+
+          <div class="separator">
+            + Produtos: R$100,00<br>
+            + Insumos: R$16,00<br>
+            + Frete: R$50,00<br>
+            + Taxas: R$2,59<br>
+            <label for="product">=</label>
+            <input type="text" placeHolder="R$169,00"/>
+          </div>
+        </fieldset>
+      </div>
+
+    
+
+    </form>
+    
+    <button>Fechar Venda</button>
+ 
+  </body>
+</html>
